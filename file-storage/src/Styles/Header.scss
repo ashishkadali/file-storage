@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerContainer {
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fileManger {
+  font-size: 2.5vw;
+  font-family: auto;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pluseIcon {
+  padding: 5px 10px 5px 10px;
+  color: white;
+}
+
+.uploadButton {
+  color: white;
+  background-color: #8f00ff;
+  padding: 0px 10px 0px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5vw;
+}

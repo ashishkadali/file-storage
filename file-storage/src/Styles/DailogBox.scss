@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modalWrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(189, 189, 189, 0.9);
+}
+
+.modalContainer {
+  max-width: 30rem;
+  background-color: #fff;
+  position: fixed;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  // css trick div to center of website
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: initial;
+  //
+}
+.category {
+  margin-bottom: 1rem;
+}
+
+.fileText {
+  @extend .category;
+}
+
+.file {
+  @extend .category;
+}
+
+.submitButton {
+  @extend .category;
+}
+
+.cancelButton {
+  @extend .category;
+  margin-left: 1rem;
+}
