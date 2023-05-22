@@ -3,8 +3,13 @@ import "../../Styles/DailogBox.scss";
 import { contextApiData } from "../../App";
 
 export default function DailogBox(props) {
-  const { setCategory, setFile } = useContext(contextApiData);
+  const { setCategory, setFile, setFileDataupdated, setCategoryDataupdated } =
+    useContext(contextApiData);
 
+  function handelChange() {
+    setCategoryDataupdated(true);
+    setFileDataupdated(true);
+  }
   return (
     <div>
       <div className="modalWrapper" onClick={props.closeModel}></div>
@@ -34,7 +39,10 @@ export default function DailogBox(props) {
           className="submitButton "
           class="btn btn-primary"
           type="button"
-          onClick={props.closeModel}
+          onClick={() => {
+            props.closeModel();
+            handelChange();
+          }}
         >
           Submit
         </button>
